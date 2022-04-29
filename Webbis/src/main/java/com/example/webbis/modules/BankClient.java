@@ -1,4 +1,4 @@
-package jackebank;
+package com.example.webbis.modules;
 
 public class BankClient {
 

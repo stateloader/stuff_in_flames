@@ -10,19 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3e64198-6f81-44c4-a064-7e6762cb7f4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/ClientMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jackebank/BankClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jackebank/JackeBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/utils/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/utils/database.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webbis/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webbis/ServletTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/ServletTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webbis/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webbis/ServletTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webbis/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jackebank/BankClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/BankClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jackebank/JackeBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/JackeBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/JackeBank/BankClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/JackeBank/JackeBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/ClientMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webbis/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webbis/ClientMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jackebank/BankClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jackebank/JackeBank.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +66,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jakob\stateloader\stuff_in_flames\Webbis\src\main\java\com\example\webbis\modules\utils" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.62" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.62" ALTERNATIVE_JRE_ENABLED="false">
@@ -117,7 +123,8 @@
       <workItem from="1651132882681" duration="238000" />
       <workItem from="1651134434693" duration="1317000" />
       <workItem from="1651136361402" duration="1562000" />
-      <workItem from="1651156024510" duration="23927000" />
+      <workItem from="1651156024510" duration="24022000" />
+      <workItem from="1651243435800" duration="4764000" />
     </task>
     <servers />
   </component>
