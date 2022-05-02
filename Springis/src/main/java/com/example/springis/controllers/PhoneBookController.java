@@ -1,19 +1,28 @@
 package com.example.springis.controllers;
 
-import com.example.springis.myclass.PhoneBook;
-import com.example.springis.phonedao.PhoneDao;
+import com.example.springis.phonebook.PhoneBook;
+import com.example.springis.phonebookdao.PhoneBookDao;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 public class PhoneBookController {
 
-  PhoneDao phoneDao = new PhoneDao();
+  PhoneBookDao phoneDao = new PhoneBookDao();
 
-  @RequestMapping(value="/phonebook", produces = "application/JSON")
-  public List<PhoneBook> index() {
-    return phoneDao.getAllPhones();
+  @RequestMapping("/phonebook/search_id/{id}")
+  public PhoneBook parseById(@PathVariable int id) {
+    return phoneDao.getById(id);
+  }
+
+  @RequestMapping("/phonebook/search_firstname/{firstname}")
+  public PhoneBook parseByFirstName(@PathVariable String firstname) {
+    return phoneDao.getByFirstName(firstname);
+  }
+
+  @RequestMapping("/phonebook/search_lastname/{lastname}")
+  public PhoneBook parseByLastName(@PathVariable String lastname) {
+    return phoneDao.getByLastName(lastname);
   }
 }
