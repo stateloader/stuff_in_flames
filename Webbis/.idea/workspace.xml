@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3e64198-6f81-44c4-a064-7e6762cb7f4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/utils/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/utils/database.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webbis/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/ClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jackebank/BankClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/BankClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jackebank/JackeBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webbis/modules/JackeBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/JackeBank/BankClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/JackeBank/JackeBank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/WEB-INF/classes/com/example/webbis/ClientMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Webbis-1.0-SNAPSHOT/login_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webbis/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webbis/ClientMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jackebank/BankClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jackebank/JackeBank.class" beforeDir="false" />
-    </list>
+    <list default="true" id="f3e64198-6f81-44c4-a064-7e6762cb7f4d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +37,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28PzCDD1RnoiXNzbpVwK2OvdWzI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -124,7 +112,7 @@
       <workItem from="1651134434693" duration="1317000" />
       <workItem from="1651136361402" duration="1562000" />
       <workItem from="1651156024510" duration="24022000" />
-      <workItem from="1651243435800" duration="4764000" />
+      <workItem from="1651243435800" duration="4857000" />
     </task>
     <servers />
   </component>
@@ -141,5 +129,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
