@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3e64198-6f81-44c4-a064-7e6762cb7f4d" name="Changes" comment="" />
+    <list default="true" id="f3e64198-6f81-44c4-a064-7e6762cb7f4d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Experiment/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/Experiment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/src/BankSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/src/backend/BankClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/src/backend/FileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Experiment/src/backend/database.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/out/production/Test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +131,8 @@
       <workItem from="1651136361402" duration="1562000" />
       <workItem from="1651156024510" duration="24022000" />
       <workItem from="1651243435800" duration="4857000" />
+      <workItem from="1651474286581" duration="502000" />
+      <workItem from="1651477446577" duration="846000" />
     </task>
     <servers />
   </component>
