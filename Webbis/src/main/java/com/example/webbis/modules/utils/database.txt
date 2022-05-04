@@ -1,2 +1,0 @@
-data,pata,12345
-mega,man,65433
