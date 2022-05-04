@@ -1,12 +1,12 @@
 package com.example.springis.response;
 
-public class ResponseJSON {
+public class Response {
   private String message;
   private Boolean status;
 
-  public ResponseJSON() {}
+  public Response() {}
 
-  public ResponseJSON(String message, Boolean status) {
+  public Response(String message, Boolean status) {
     this.message = message;
     this.status = status;
   }

@@ -1,11 +1,14 @@
 package com.example.springis.phonebook;
 
+import com.example.springis.response.Response;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PhoneBook {
 
   private int bookLength;
+  private int entryCount;
   private List<PhoneEntry> phoneBook;
 
   public PhoneBook() {setPhoneBook();}
@@ -47,7 +50,7 @@ public class PhoneBook {
     return null;
   }
 
-  public void setBookEntry(PhoneEntry book) {
+  public void addEntry(PhoneEntry book) {
     this.phoneBook.add(book);
     this.bookLength++;
   }
