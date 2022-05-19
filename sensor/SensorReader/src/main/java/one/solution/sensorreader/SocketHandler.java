@@ -27,11 +27,9 @@ public class SocketHandler extends TextWebSocketHandler {
 
     fetcher.readFile();
 
-
     Map value = new Gson().fromJson(message.getPayload(), Map.class);
     for(WebSocketSession webSocketSession : sessions) {
-      webSocketSession.sendMessage(
-              new TextMessage(fetcher.getIncoming() + value.get("name") + " !"));
+      webSocketSession.sendMessage(new TextMessage(fetcher.getDateTime() + value.get("name") + " !"));
     }
   }
 }

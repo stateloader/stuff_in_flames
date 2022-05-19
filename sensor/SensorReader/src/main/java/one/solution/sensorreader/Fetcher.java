@@ -1,25 +1,18 @@
 package one.solution.sensorreader;
 
-import org.springframework.web.socket.WebSocketSession;
-
+import java.util.ArrayList;
 import java.util.List;
-
-
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Fetcher {
 
-  static List<WebSocketSession> sessions;
-
   private static final String FILEPATH =
           "C:\\Users\\jakob\\stateloader\\stuff_in_flames\\sensor\\SensorReader\\src\\main\\resources\\current_reading.txt";
 
-  // Två variabler. Förra mätningen. Nya mätningen. Dessa anländer i strängformatet "temp,humid,timestamp".
   private String previous;
   private String incoming;
   private boolean update;
@@ -28,7 +21,6 @@ public class Fetcher {
   private String temperature;
   private String humidity;
 
-  // Constructor.
   public Fetcher() {}
 
   public String getIncoming() {return incoming;}
@@ -40,7 +32,6 @@ public class Fetcher {
   public String getTemperature() {return temperature;}
   public String getHumidity() {return humidity;}
 
-  // Setters samtliga variabler deklarerade ovanför constructor.
   public void setPrevious(String previous) {this.previous = previous;}
   public void setIncoming(String incoming) {this.incoming = incoming;}
   public void setUpdate(boolean update) {this.update = update;}
@@ -59,12 +50,14 @@ public class Fetcher {
       if (scanner.hasNext())
         setIncoming(scanner.nextLine());
 
+      tokenize();
+
       if (!getIncoming().equals(getPrevious())) {
         setPrevious(getIncoming());
         setUpdate(true);
-      }
-      else
+      } else
         setUpdate(false);
+
       scanner.close();
 
     } catch (IOException ioException) {
@@ -72,18 +65,16 @@ public class Fetcher {
     }
   }
 
-  /*
   private void tokenize() {
 
-    List<String> incomingItems = new ArrayList<>();
+    List<String> items = new ArrayList<>(3);
     StringTokenizer tokens = new StringTokenizer(getIncoming());
 
     while (tokens.hasMoreTokens())
-        incomingItems.add(tokens.nextToken());
+        items.add(tokens.nextToken());
 
-    setTemperature(incomingItems.get(0));
-    setHumidity(incomingItems.get(1));
-    setDateTime(incomingItems.get(2));
+    setTemperature(items.get(0));
+    setHumidity(items.get(1));
+    setDateTime(items.get(2));
   }
-  */
 }
