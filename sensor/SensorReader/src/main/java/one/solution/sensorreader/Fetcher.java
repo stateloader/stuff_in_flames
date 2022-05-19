@@ -40,7 +40,12 @@ public class Fetcher {
   public void setTemperature(String temperature) {this.temperature = temperature;}
   public void setHumidity(String humidity) {this.humidity = humidity;}
 
-  public void readFile() {
+  public void fetchData() {
+    readFile();
+    tokenize();
+  }
+
+  private void readFile() {
 
     try {
 
@@ -49,8 +54,7 @@ public class Fetcher {
 
       if (scanner.hasNext())
         setIncoming(scanner.nextLine());
-
-      tokenize();
+      //tokenize();
 
       if (!getIncoming().equals(getPrevious())) {
         setPrevious(getIncoming());
@@ -67,11 +71,11 @@ public class Fetcher {
 
   private void tokenize() {
 
-    List<String> items = new ArrayList<>(3);
-    StringTokenizer tokens = new StringTokenizer(getIncoming());
+    List<String> items = new ArrayList<>();
+    StringTokenizer tokenizer = new StringTokenizer(getIncoming(), ",");
 
-    while (tokens.hasMoreTokens())
-        items.add(tokens.nextToken());
+    while (tokenizer.hasMoreElements())
+        items.add(tokenizer.nextToken());
 
     setTemperature(items.get(0));
     setHumidity(items.get(1));

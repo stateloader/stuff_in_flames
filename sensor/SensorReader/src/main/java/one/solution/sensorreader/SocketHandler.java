@@ -25,7 +25,7 @@ public class SocketHandler extends TextWebSocketHandler {
   @Override
   public void handleTextMessage(WebSocketSession session, TextMessage message) throws IOException {
 
-    fetcher.readFile();
+    fetcher.fetchData();
 
     Map value = new Gson().fromJson(message.getPayload(), Map.class);
     for(WebSocketSession webSocketSession : sessions) {

@@ -4,7 +4,7 @@ GENERELLT
 
 - Javascrriptet på absoluta frontend-barrikaden tillsammans med trådning ej på plats. Att ny mätdata faktiskt
   lästs in i går dock att se då jag kidnappat en av Sigruns variabler. Vid varje klick av sänd så kommer en
-  för nu obehandlad rå-sträng med värderna efter formatet "temp, humid, timestamp" att skrivas ut. 
+  timestamp:en från uspringliga rådatat att skrivas ut. Ändras var femte sekund (med nuvarande conf). 
 -----------------------------------------------------------------------------------------------------------------
 
 
@@ -61,5 +61,5 @@ void loop() {
 5) Exekvera programmet.
 6) Öppna Browsern, jaga in på localhost.
 
-7) Sigruns original, rådatat kommer synas i den kidnappade payload-variabeln om allt funkar som det ska.
+7) Sigruns original, timestamp kommer att synas i den kidnappade payload-variabeln om allt funkar som det ska.
 ------------------------------------------------------------------------------------------------------------------
