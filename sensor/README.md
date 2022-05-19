@@ -58,8 +58,10 @@ void loop() {
 ------------------------------------------------------------------------------------------------------------------
                                                                                    JAVA-APPLIKATION "SensorReader"
 ------------------------------------------------------------------------------------------------------------------
-5) Exekvera programmet.
-6) Öppna Browsern, jaga in på localhost.
 
-7) Sigruns original, timestamp kommer att synas i den kidnappade payload-variabeln om allt funkar som det ska.
+5) Ändra FILEPATH i Klassen "Fetcher". För nu så SensorReader hittar indatat, nu hårdkodat efter min filstruktur.
+6) Exekvera programmet.
+7) Öppna Browsern, jaga in på localhost.
+
+8) Sigruns original, timestamp kommer att synas i den kidnappade payload-variabeln om allt funkar som det ska.
 ------------------------------------------------------------------------------------------------------------------
