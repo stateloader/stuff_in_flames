@@ -17,14 +17,13 @@ public class Fetcher {
   static List<WebSocketSession> sessions;
 
   private static final String FILEPATH =
-          "C:\\Users\\jakob\\sensor\\SensorReader\\src\\main\\resources\\current_reading.txt";
+          "C:\\Users\\jakob\\stateloader\\stuff_in_flames\\sensor\\SensorReader\\src\\main\\resources\\current_reading.txt";
 
   // Två variabler. Förra mätningen. Nya mätningen. Dessa anländer i strängformatet "temp,humid,timestamp".
   private String previous;
   private String incoming;
   private boolean update;
 
-  // Tre variabler. Till dessa kommer "incoming" att styckas upp.
   private String dateTime;
   private String temperature;
   private String humidity;
@@ -32,7 +31,6 @@ public class Fetcher {
   // Constructor.
   public Fetcher() {}
 
-  // Getters samtliga variabler deklarerade ovanför constructor.
   public String getIncoming() {return incoming;}
   public String getPrevious() {return previous;}
 
