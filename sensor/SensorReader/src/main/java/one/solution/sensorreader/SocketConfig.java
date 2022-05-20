@@ -5,11 +5,14 @@ import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
 
+
+/* Kortfattad förklaring Config */
+
 @Configuration
 @EnableWebSocket
-public class SensorReaderConfig implements WebSocketConfigurer {
+public class SocketConfig implements WebSocketConfigurer {
 
   public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-    registry.addHandler(new SensorReaderHandler(), "/name");
+    registry.addHandler(new SocketHandler(), "/name");
   }
 }
