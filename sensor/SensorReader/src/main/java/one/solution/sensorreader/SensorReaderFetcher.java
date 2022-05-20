@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Fetcher {
+public class SensorReaderFetcher {
 
   private static final String FILEPATH =
           "C:\\Users\\jakob\\stateloader\\stuff_in_flames\\sensor\\SensorReader\\src\\main\\resources\\current_reading.txt";
@@ -21,7 +21,7 @@ public class Fetcher {
   private String temperature;
   private String humidity;
 
-  public Fetcher() {}
+  public SensorReaderFetcher() {}
 
   public String getIncoming() {return incoming;}
   public String getPrevious() {return previous;}

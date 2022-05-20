@@ -4,7 +4,7 @@ import datetime
 import time
 
 delim = ","
-path = "SensorREader\\src\\main\\resources\\current_reading.txt"
+path = "SensorReader\\src\\main\\resources\\current_reading.txt"
 
 def write_file(package):
     file = open(path, "w")

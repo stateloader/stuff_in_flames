@@ -7,9 +7,9 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 
 @Configuration
 @EnableWebSocket
-public class WebSocketConfig implements WebSocketConfigurer {
+public class SensorReaderConfig implements WebSocketConfigurer {
 
   public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-    registry.addHandler(new SocketHandler(), "/name");
+    registry.addHandler(new SensorReaderHandler(), "/name");
   }
 }

@@ -12,10 +12,10 @@ import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
-public class SocketHandler extends TextWebSocketHandler {
+public class SensorReaderHandler extends TextWebSocketHandler {
 
   List <WebSocketSession>sessions = new CopyOnWriteArrayList<>();
-  Fetcher fetcher = new Fetcher();
+  SensorReaderFetcher fetcher = new SensorReaderFetcher();
 
   @Override
   public void afterConnectionEstablished(WebSocketSession session) {

@@ -8,7 +8,7 @@ ws.onmessage = function(event) {
 }
 
 function send() {
-    let content = document.getElementById("username").value;
-    let json = JSON.stringify({"name":content});
+    let temperature = document.getElementById("username").value;
+    let json = JSON.stringify({"name":temperature});
     ws.send(json);
 }
