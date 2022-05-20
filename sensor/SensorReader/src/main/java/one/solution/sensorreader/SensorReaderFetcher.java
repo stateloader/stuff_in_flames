@@ -69,14 +69,14 @@ public class SensorReaderFetcher {
         // En liten notis om "varför" angående detta med hasNext().
 
         // När javaprogrammet scannar filen så kan det hända att så görs PRECIS NÄR PYTHON-SCRIPTET UPPDATERAR/SKRIVER.
-        // I det fallet kommer ingen "nextLine()" således att finnas varpå programmet kraschar vilket fockar upp saker
-        // och ting högre upp i stacken.
+        // I det fallet finns ingen "nextLine()" varpå programmet kraschar. Det fockar i sin tur upp saker och ting
+        // högre upp i stacken.
 
         setIncoming(scanner.nextLine());
-        // Genom att "ok, om det finns en nextline (finns en rad), tilldela denna isf till incoming. Annars "låt gå".
+        // Om det däremot finns en nextLine (i nära alla fall av alla) så tilldelas denna till incoming.
 
       if (!getIncoming().equals(getPrevious())) {
-        // Gammal hederlig last/new-tilldelning.
+        // Gammal hederlig last/new-tilldelning/swap.
 
         // Om inläst incoming INTE är identisk med föregående så innebär det att ett nytt värde i current_reading.txt
         // publisherats av python-scriptet.
