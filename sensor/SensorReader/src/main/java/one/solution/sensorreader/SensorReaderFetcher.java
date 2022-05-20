@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 
   /* Logiken är naturligtvis uppenbar för alla men övertydlighet i rådande läge tror jag inte är till skada för någon */
                                                    /* av oss =) */
-
 public class SensorReaderFetcher {
 
   // Kalle-Anka-pathing. Ska implementera Oscars lösning sinom tid.
