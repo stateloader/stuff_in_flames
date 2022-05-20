@@ -13,23 +13,23 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
 public class SensorReaderHandler extends TextWebSocketHandler {
-
+  //Thread safe list
   List <WebSocketSession>sessions = new CopyOnWriteArrayList<>();
-  SensorReaderFetcher fetcher = new SensorReaderFetcher();
+  NumberGenerator g = new NumberGenerator(sessions);
 
   @Override
-  public void afterConnectionEstablished(WebSocketSession session) {
+  public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+    //the messages will be broadcasted to all users.
     sessions.add(session);
   }
 
   @Override
-  public void handleTextMessage(WebSocketSession session, TextMessage message) throws IOException {
-
-    fetcher.fetchData();
-
+  public void handleTextMessage(WebSocketSession session, TextMessage message)
+          throws InterruptedException, IOException {
     Map value = new Gson().fromJson(message.getPayload(), Map.class);
+
     for(WebSocketSession webSocketSession : sessions) {
-      webSocketSession.sendMessage(new TextMessage(fetcher.getDateTime() + value.get("name") + " !"));
+      webSocketSession.sendMessage(new TextMessage("Hello " + value.get("name") + " !"));
     }
   }
 }

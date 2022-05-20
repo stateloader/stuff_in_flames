@@ -1,5 +1,8 @@
 package one.solution.sensorreader;
 
+import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketSession;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.io.File;
@@ -12,7 +15,7 @@ import java.util.StringTokenizer;
 
   /* Logiken är naturligtvis uppenbar för alla men övertydlighet i rådande läge tror jag inte är till skada för någon */
                                                    /* av oss =) */
-public class SensorReaderFetcher {
+public class Fetcher {
 
   // Kalle-Anka-pathing. Ska implementera Oscars lösning sinom tid.
   private static final String FILEPATH =
@@ -21,14 +24,14 @@ public class SensorReaderFetcher {
   // Klassattribut.
   private String previous;
   private String incoming;
-  private boolean update;
+  private boolean update = false;
 
   private String dateTime;
   private String temperature;
   private String humidity;
 
   // Konstruktor.
-  public SensorReaderFetcher() {}
+  public Fetcher() {}
 
   // Getters.
   public String getIncoming() {return incoming;}
