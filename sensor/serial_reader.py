@@ -4,7 +4,7 @@ import datetime
 import time
 
 delim = ","
-path = "SensorReader\\src\\main\\resources\\current_reading.txt"
+path = "Sensor\\src\\main\\resources\\current_reading.txt"
 
 def write_file(package):
     file = open(path, "w")
@@ -19,6 +19,7 @@ def canonical_time():
 def main():
     arduino = serial.Serial(port='com3', baudrate=9600)
     print("Established Serial Communication to Arduino")
+    print("Reading...")
 
     while True:
 
